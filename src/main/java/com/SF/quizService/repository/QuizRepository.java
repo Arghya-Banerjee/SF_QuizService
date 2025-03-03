@@ -36,8 +36,8 @@ public interface QuizRepository extends JpaRepository<RootEntity, Long> {
     );
 
     @Modifying
-    @Query(value = "EXEC usp_QuizSession @opMode = :opMode, @sessionId = :sessionId, @quizId = :quizId, @studentAnswer = :studentAnswer", nativeQuery = true)
     @Transactional
+    @Query(value = "EXEC usp_QuizSession @opMode = :opMode, @sessionId = :sessionId, @quizId = :quizId, @studentAnswer = :studentAnswer", nativeQuery = true)
     void submitQuizAnswer(
             @Param("opMode") int opMode,
             @Param("sessionId") int sessionId,
@@ -49,6 +49,21 @@ public interface QuizRepository extends JpaRepository<RootEntity, Long> {
     List<QuizReportDto> viewQuizReport(
             @Param("opMode") int opMode,
             @Param("sessionId") int sessionId
+    );
+
+    @Query(value = "EXEC usp_QuizSession @opMode = :opMode, @sessionId = :sessionId", nativeQuery = true)
+    String getQuizAnalysis(
+            @Param("opMode") int opMode,
+            @Param("sessionId") int sessionId
+    );
+
+    @Modifying
+    @Transactional
+    @Query(value = "EXEC usp_QuizSession @opMode = :opMode, @sessionId = :sessionId, @analysis = :analysis", nativeQuery = true)
+    void insertQuizAnalysis(
+            @Param("opMode") int opMode,
+            @Param("sessionId") int sessionId,
+            @Param("analysis") String analysis
     );
 
 }

@@ -57,20 +57,24 @@ public class QuizController {
     public ResponseEntity<QuizAnalysisDto> viewQuizReport(@PathVariable int sessionId){
         List<QuizReportDto> answerList = quizService.viewQuizReport(4, sessionId);
 
-        StringBuilder payload = new StringBuilder("Following are the questions with options along with the student answer and the correct answer option: " + "\n");
-        for(QuizReportDto it: answerList){
-            payload.append(
-                     it.getQuestion() + "\n"
-                    + "Option 1: " + it.getChoice1() + "\n"
-                    + "Option 2: " + it.getChoice2() + "\n"
-                    + "Option 3: " + it.getChoice3() + "\n"
-                    + "Option 4: " + it.getChoice4() + "\n"
-                    + "Student Answer option: " + it.getStudentAnswer() + "\n"
-                    + "Correct Answer option: " + it.getCorrectAnswer() + "\n" + "\n"
-            );
+        String analysis = quizService.getQuizAnalysis(5, sessionId);
+        if(analysis == null){
+            StringBuilder payload = new StringBuilder("Following are the questions with options along with the student answer and the correct answer option: " + "\n");
+            for(QuizReportDto it: answerList){
+                payload.append(
+                        it.getQuestion() + "\n"
+                                + "Option 1: " + it.getChoice1() + "\n"
+                                + "Option 2: " + it.getChoice2() + "\n"
+                                + "Option 3: " + it.getChoice3() + "\n"
+                                + "Option 4: " + it.getChoice4() + "\n"
+                                + "Student Answer option: " + it.getStudentAnswer() + "\n"
+                                + "Correct Answer option: " + it.getCorrectAnswer() + "\n" + "\n"
+                );
+            }
+            payload.append("Analyse the answers of the student and give a feedback on improvement areas in 50 words.");
+            analysis = quizAIService.askQuestion(payload.toString());
+            quizService.insertQuizAnalysis(6, sessionId, analysis);
         }
-        payload.append("Analyse the answers of the student and give a feedback on improvement areas in 50 words.");
-        String analysis = quizAIService.askQuestion(payload.toString());
 
         QuizAnalysisDto quizAnalysis = new QuizAnalysisDto(answerList, analysis);
 

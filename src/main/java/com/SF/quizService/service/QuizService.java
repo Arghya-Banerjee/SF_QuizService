@@ -40,4 +40,12 @@ public class QuizService {
     public List<QuizReportDto> viewQuizReport(int opMode, int sessionId){
         return quizRepository.viewQuizReport(opMode, sessionId);
     }
+
+    public String getQuizAnalysis(int opMode, int sessionId){
+        return quizRepository.getQuizAnalysis(opMode, sessionId);
+    }
+
+    public void insertQuizAnalysis(int opMode, int sessionId, String analysis){
+        quizRepository.insertQuizAnalysis(opMode, sessionId, analysis);
+    }
 }
