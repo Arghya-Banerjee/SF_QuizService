@@ -12,9 +12,9 @@ import java.util.Objects;
 public class QuizAIService {
 
     // Access to API and API_KEY
-    @Value("${GEMINI.API.URL}")
-    private String apiUri;
-    @Value("${GEMINI.API.KEY}")
+    @Value("${gemini.api.uri}")
+    private String apiUrl;
+    @Value("${gemini.api.key}")
     private String apiKey;
 
     private final WebClient webClient;
@@ -40,7 +40,7 @@ public class QuizAIService {
 
         // Call API
         GeminiResponseDto response = webClient.post()
-                .uri("")
+                .uri(apiUrl + apiKey)
                 .header("Content-Type", "application/json")
                 .bodyValue(payLoad)
                 .retrieve()
