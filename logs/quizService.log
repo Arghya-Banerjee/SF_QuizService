@@ -1,0 +1,56 @@
+2025-03-07 12:36:10.710 [restartedMain] INFO  c.S.q.QuizServiceApplication - Starting QuizServiceApplication using Java 23.0.1 with PID 17256 (D:\SpringBoot\quizService\target\classes started by arghya in D:\SpringBoot\quizService)
+2025-03-07 12:36:10.712 [restartedMain] INFO  c.S.q.QuizServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-07 12:36:19.081 [restartedMain] INFO  c.S.q.QuizServiceApplication - Started QuizServiceApplication in 9.473 seconds (process running for 11.178)
+2025-03-07 12:36:19.804 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 1, subtopicId = 1
+2025-03-07 12:36:24.978 [http-nio-8080-exec-2] INFO  c.SF.quizService.service.QuizService - startQuizSession called with parameters: opMode = 1, studentId = 1
+2025-03-07 12:36:27.677 [http-nio-8080-exec-4] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 33, quizAnswerDto = QuizAnswerDto{quizId=62, studentAnswer=2}
+2025-03-07 12:36:29.743 [http-nio-8080-exec-3] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 33, quizAnswerDto = QuizAnswerDto{quizId=71, studentAnswer=3}
+2025-03-07 12:36:31.190 [http-nio-8080-exec-5] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 33, quizAnswerDto = QuizAnswerDto{quizId=65, studentAnswer=4}
+2025-03-07 12:36:32.858 [http-nio-8080-exec-7] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 33, quizAnswerDto = QuizAnswerDto{quizId=74, studentAnswer=4}
+2025-03-07 12:36:34.241 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 33, quizAnswerDto = QuizAnswerDto{quizId=63, studentAnswer=4}
+2025-03-07 12:36:36.092 [http-nio-8080-exec-10] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 33, quizAnswerDto = QuizAnswerDto{quizId=64, studentAnswer=4}
+2025-03-07 12:36:37.558 [http-nio-8080-exec-8] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 33, quizAnswerDto = QuizAnswerDto{quizId=66, studentAnswer=0}
+2025-03-07 12:36:39.089 [http-nio-8080-exec-9] INFO  c.SF.quizService.service.QuizService - endQuizSession called with parameters: opMode = 2, sessionId = 33
+2025-03-07 12:36:40.405 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - viewQuizReport called with parameters: opMode = 4, sessionId = 33
+2025-03-07 12:36:40.424 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getQuizAnalysis called with parameters: opMode = 5, sessionId = 33
+2025-03-07 12:36:43.566 [http-nio-8080-exec-1] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 426, Response Tokens: 81, Total Tokens: 507
+2025-03-07 12:36:43.566 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - insertQuizAnalysis called with parameters: opMode = 6, sessionId = 33 and analysis
+2025-03-07 12:36:45.270 [http-nio-8080-exec-2] INFO  c.SF.quizService.service.QuizService - viewQuizReport called with parameters: opMode = 4, sessionId = 33
+2025-03-07 12:36:45.270 [http-nio-8080-exec-2] INFO  c.SF.quizService.service.QuizService - getQuizAnalysis called with parameters: opMode = 5, sessionId = 33
+2025-03-07 20:07:32.473 [restartedMain] INFO  c.S.q.QuizServiceApplication - Starting QuizServiceApplication using Java 23.0.1 with PID 4404 (D:\SpringBoot\quizService\target\classes started by arghya in D:\SpringBoot\quizService)
+2025-03-07 20:07:32.477 [restartedMain] INFO  c.S.q.QuizServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-07 20:07:41.795 [restartedMain] INFO  c.S.q.QuizServiceApplication - Started QuizServiceApplication in 9.886 seconds (process running for 10.859)
+2025-03-07 20:08:54.658 [http-nio-8080-exec-2] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 4
+2025-03-07 20:09:47.238 [restartedMain] INFO  c.S.q.QuizServiceApplication - Starting QuizServiceApplication using Java 23.0.1 with PID 12784 (D:\SpringBoot\quizService\target\classes started by arghya in D:\SpringBoot\quizService)
+2025-03-07 20:09:47.247 [restartedMain] INFO  c.S.q.QuizServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-07 20:09:52.587 [restartedMain] INFO  c.S.q.QuizServiceApplication - Started QuizServiceApplication in 5.763 seconds (process running for 6.553)
+2025-03-07 20:10:17.951 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-07 20:10:20.207 [http-nio-8080-exec-2] INFO  c.SF.quizService.service.QuizService - startQuizSession called with parameters: opMode = 1, studentId = 1
+2025-03-07 20:10:22.837 [http-nio-8080-exec-4] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 34, quizAnswerDto = QuizAnswerDto{quizId=75, studentAnswer=2}
+2025-03-07 20:10:24.866 [http-nio-8080-exec-5] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 34, quizAnswerDto = QuizAnswerDto{quizId=64, studentAnswer=4}
+2025-03-07 20:10:34.442 [http-nio-8080-exec-8] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 34, quizAnswerDto = QuizAnswerDto{quizId=72, studentAnswer=4}
+2025-03-07 20:10:43.918 [http-nio-8080-exec-9] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 34, quizAnswerDto = QuizAnswerDto{quizId=70, studentAnswer=4}
+2025-03-07 20:10:45.844 [http-nio-8080-exec-10] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 34, quizAnswerDto = QuizAnswerDto{quizId=65, studentAnswer=4}
+2025-03-07 20:10:47.511 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 34, quizAnswerDto = QuizAnswerDto{quizId=69, studentAnswer=4}
+2025-03-07 20:10:48.983 [http-nio-8080-exec-2] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 34, quizAnswerDto = QuizAnswerDto{quizId=73, studentAnswer=4}
+2025-03-07 20:10:50.948 [http-nio-8080-exec-4] INFO  c.SF.quizService.service.QuizService - endQuizSession called with parameters: opMode = 2, sessionId = 34
+2025-03-07 20:10:57.064 [http-nio-8080-exec-5] INFO  c.SF.quizService.service.QuizService - viewQuizReport called with parameters: opMode = 4, sessionId = 34
+2025-03-07 20:10:57.085 [http-nio-8080-exec-5] INFO  c.SF.quizService.service.QuizService - getQuizAnalysis called with parameters: opMode = 5, sessionId = 34
+2025-03-07 20:11:00.903 [http-nio-8080-exec-5] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 425, Response Tokens: 52, Total Tokens: 477
+2025-03-07 20:11:00.903 [http-nio-8080-exec-5] INFO  c.SF.quizService.service.QuizService - insertQuizAnalysis called with parameters: opMode = 6, sessionId = 34 and analysis
+2025-03-07 20:11:30.297 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - viewQuizReport called with parameters: opMode = 4, sessionId = 34
+2025-03-07 20:11:30.314 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - getQuizAnalysis called with parameters: opMode = 5, sessionId = 34
+2025-03-07 22:05:57.113 [restartedMain] INFO  c.S.q.QuizServiceApplication - Starting QuizServiceApplication using Java 23.0.1 with PID 17160 (D:\SpringBoot\quizService\target\classes started by arghya in D:\SpringBoot\quizService)
+2025-03-07 22:05:57.113 [restartedMain] INFO  c.S.q.QuizServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-07 22:06:02.944 [restartedMain] INFO  c.S.q.QuizServiceApplication - Started QuizServiceApplication in 6.263 seconds (process running for 7.001)
+2025-03-07 22:07:08.136 [restartedMain] INFO  c.S.q.QuizServiceApplication - Starting QuizServiceApplication using Java 23.0.1 with PID 13352 (D:\SpringBoot\quizService\target\classes started by arghya in D:\SpringBoot\quizService)
+2025-03-07 22:07:08.136 [restartedMain] INFO  c.S.q.QuizServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-07 22:07:13.542 [restartedMain] INFO  c.S.q.QuizServiceApplication - Started QuizServiceApplication in 5.87 seconds (process running for 6.638)
+2025-03-07 22:07:51.768 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 70
+2025-03-07 22:07:56.238 [http-nio-8080-exec-1] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 35, Response Tokens: 65, Total Tokens: 100
+2025-03-07 22:10:17.199 [restartedMain] INFO  c.S.q.QuizServiceApplication - Starting QuizServiceApplication using Java 23.0.1 with PID 7260 (D:\SpringBoot\quizService\target\classes started by arghya in D:\SpringBoot\quizService)
+2025-03-07 22:10:17.201 [restartedMain] INFO  c.S.q.QuizServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-07 22:10:22.864 [restartedMain] INFO  c.S.q.QuizServiceApplication - Started QuizServiceApplication in 6.076 seconds (process running for 6.827)
+2025-03-07 22:10:27.277 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 70
+2025-03-07 22:10:27.453 [http-nio-8080-exec-1] INFO  c.S.q.controller.QuizController - A triple bond is present in:
+2025-03-07 22:10:30.961 [http-nio-8080-exec-1] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 21, Response Tokens: 73, Total Tokens: 94

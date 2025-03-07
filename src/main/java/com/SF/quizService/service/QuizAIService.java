@@ -1,6 +1,9 @@
 package com.SF.quizService.service;
 
 import com.SF.quizService.dto.GeminiResponseDto;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -17,7 +20,11 @@ public class QuizAIService {
     @Value("${gemini.api.key}")
     private String apiKey;
 
+    @Autowired
+    private QuizService quizService;
+
     private final WebClient webClient;
+    private static final Logger logger = LoggerFactory.getLogger(QuizAIService.class);
 
     public QuizAIService(WebClient.Builder webClient) {
         this.webClient = webClient.build();
@@ -48,7 +55,7 @@ public class QuizAIService {
                 .block();
 
         // Return response from API
-//        return response;
+        logger.info("Quiz Report Analysis generated with cost: {}", response.toStringTokenCost());
         return extractText(response);
     }
 
@@ -65,6 +72,5 @@ public class QuizAIService {
         }
         return "No valid response from AI";
     }
-
 
 }

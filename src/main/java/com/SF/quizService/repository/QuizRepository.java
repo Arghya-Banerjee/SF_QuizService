@@ -2,6 +2,7 @@ package com.SF.quizService.repository;
 
 import com.SF.quizService.dto.EndQuizDto;
 import com.SF.quizService.dto.GetQuestionsBySubtopicDto;
+import com.SF.quizService.dto.QuizQuestionDto;
 import com.SF.quizService.dto.QuizReportDto;
 import com.SF.quizService.model.RootEntity;
 import jakarta.transaction.Transactional;
@@ -17,7 +18,7 @@ import java.util.List;
 public interface QuizRepository extends JpaRepository<RootEntity, Long> {
 
 
-    @Query(value = "EXEC usp_QuizData @opMode = :opMode, @subtopicId = :subtopicId", nativeQuery = true)
+    @Query(value = "EXEC usp_QuizSession @opMode = :opMode, @subtopicId = :subtopicId", nativeQuery = true)
     List<GetQuestionsBySubtopicDto> getQuestionsBySubtopic(
             @Param("opMode") int opMode,
             @Param("subtopicId") int subtopicId
@@ -64,6 +65,18 @@ public interface QuizRepository extends JpaRepository<RootEntity, Long> {
             @Param("opMode") int opMode,
             @Param("sessionId") int sessionId,
             @Param("analysis") String analysis
+    );
+
+    @Query(value = "EXEC usp_QuizSession @opMode = :opMode, @sessionId = :sessionId", nativeQuery = true)
+    List<QuizQuestionDto> getWrongSubmissions(
+            @Param("opMode") int opMode,
+            @Param("sessionId") int sessionId
+    );
+
+    @Query(value = "EXEC usp_QuizSession @opMode = :opMode, @quizID = :quizId", nativeQuery = true)
+    QuizQuestionDto getQuestionByQuizId(
+            @Param("opMode") int opMode,
+            @Param("quizId") int quizId
     );
 
 }

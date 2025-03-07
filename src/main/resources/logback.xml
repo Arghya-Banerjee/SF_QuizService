@@ -1,0 +1,26 @@
+<configuration>
+
+    <appender name="myConsoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="myFileAppender" class="ch.qos.logback.core.FileAppender">
+        <file>logs/quizService.log</file>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Root logger (for all logs) only logs to the console -->
+    <root level="INFO">
+        <appender-ref ref="myConsoleAppender" />
+    </root>
+
+    <!-- Custom application logger (logs only custom logs to file) -->
+    <logger name="com.SF.quizService" level="INFO">
+        <appender-ref ref="myFileAppender" />
+    </logger>
+
+</configuration>

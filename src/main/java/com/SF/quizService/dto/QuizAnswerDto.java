@@ -27,4 +27,12 @@ public class QuizAnswerDto {
     public void setStudentAnswer(int studentAnswer) {
         this.studentAnswer = studentAnswer;
     }
+
+    @Override
+    public String toString() {
+        return "QuizAnswerDto{" +
+                "quizId=" + quizId +
+                ", studentAnswer=" + studentAnswer +
+                '}';
+    }
 }

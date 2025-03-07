@@ -3,9 +3,9 @@ package com.SF.quizService.controller;
 import com.SF.quizService.dto.*;
 import com.SF.quizService.service.QuizAIService;
 import com.SF.quizService.service.QuizService;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpSession;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -21,21 +21,26 @@ public class QuizController {
     @Autowired
     private QuizAIService quizAIService;
 
+    private static final Logger logger = LoggerFactory.getLogger(QuizController.class);
+
+    // To get questions for the quiz
     @GetMapping("/subtopic/{subtopicid}")
     public ResponseEntity<List<GetQuestionsBySubtopicDto>> getQuestionsBySubtopic(@PathVariable int subtopicid){
-        List<GetQuestionsBySubtopicDto> questions = quizService.getQuestionsBySubtopic(1, subtopicid);
+        List<GetQuestionsBySubtopicDto> questions = quizService.getQuestionsBySubtopic(7, subtopicid);
 
         return ResponseEntity.ok(questions);
     }
 
+    // To start a quiz session
     @PostMapping("/start/{studentId}")
-    public ResponseEntity<Integer> startQuizSession(@PathVariable int studentId, HttpSession session){
+    public ResponseEntity<String> startQuizSession(@PathVariable int studentId, HttpSession session){
         Integer sessionId = quizService.startQuizSession(1, studentId);
         session.setAttribute("sessionId", sessionId);
 
-        return ResponseEntity.ok(sessionId);
+        return ResponseEntity.ok("Quiz Session started successfully !!");
     }
 
+    // To end a quiz session and give the sessionId to frontend
     @PutMapping("/end")
     public ResponseEntity<EndQuizDto> endQuizSession(HttpSession session){
         Integer sessionId = (Integer) session.getAttribute("sessionId");
@@ -45,6 +50,7 @@ public class QuizController {
         return ResponseEntity.ok(endQuizData);
     }
 
+    // To submit a quiz answer by student
     @PostMapping("/submit")
     public ResponseEntity<String> submitQuizAnswer(@RequestBody QuizAnswerDto quizAnswerDto, HttpSession session){
         Integer sessionId = (Integer) session.getAttribute("sessionId");
@@ -53,6 +59,7 @@ public class QuizController {
         return ResponseEntity.ok("Answer submitted succesfully !!");
     }
 
+    // To generate full quiz Report
     @GetMapping("/viewReport/{sessionId}")
     public ResponseEntity<QuizAnalysisDto> viewQuizReport(@PathVariable int sessionId){
         List<QuizReportDto> answerList = quizService.viewQuizReport(4, sessionId);
@@ -75,10 +82,21 @@ public class QuizController {
             analysis = quizAIService.askQuestion(payload.toString());
             quizService.insertQuizAnalysis(6, sessionId, analysis);
         }
-
         QuizAnalysisDto quizAnalysis = new QuizAnalysisDto(answerList, analysis);
 
         return ResponseEntity.ok(quizAnalysis);
+    }
+
+    @GetMapping("/microlesson/{quizId}")
+    public ResponseEntity<String> getMicroLession(@PathVariable int quizId){
+        QuizQuestionDto question = quizService.getQuestionByQuizId(9, quizId);
+        logger.info(question.getQuestion());
+        String microLesson = quizAIService.askQuestion(
+                "Give a micro lesson for the following question in 40 words" +
+                "\n" +
+                question.getQuestion()
+        );
+        return ResponseEntity.ok(microLesson);
     }
 
 }
