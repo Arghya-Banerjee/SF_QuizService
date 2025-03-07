@@ -7,6 +7,7 @@ import jakarta.servlet.http.HttpSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -90,11 +91,15 @@ public class QuizController {
     @GetMapping("/microlesson/{quizId}")
     public ResponseEntity<String> getMicroLession(@PathVariable int quizId){
         QuizQuestionDto question = quizService.getQuestionByQuizId(9, quizId);
+        if(question == null){
+            return new ResponseEntity<String>("Question does not exist!!", HttpStatus.NOT_FOUND);
+        }
         logger.info(question.getQuestion());
         String microLesson = quizAIService.askQuestion(
-                "Give a micro lesson for the following question in 40 words" +
+                "Give a micro lesson for the following question within 80 words" +
                 "\n" +
-                question.getQuestion()
+                question.getQuestion() +
+                "Just give the lesson in one paragraph. If possible provide one example too"
         );
         return ResponseEntity.ok(microLesson);
     }

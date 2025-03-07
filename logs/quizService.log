@@ -54,3 +54,44 @@
 2025-03-07 22:10:27.277 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 70
 2025-03-07 22:10:27.453 [http-nio-8080-exec-1] INFO  c.S.q.controller.QuizController - A triple bond is present in:
 2025-03-07 22:10:30.961 [http-nio-8080-exec-1] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 21, Response Tokens: 73, Total Tokens: 94
+2025-03-07 22:30:55.271 [restartedMain] INFO  c.S.q.QuizServiceApplication - Starting QuizServiceApplication using Java 23.0.1 with PID 816 (D:\SpringBoot\quizService\target\classes started by arghya in D:\SpringBoot\quizService)
+2025-03-07 22:30:55.287 [restartedMain] INFO  c.S.q.QuizServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-07 22:31:00.989 [restartedMain] INFO  c.S.q.QuizServiceApplication - Started QuizServiceApplication in 6.14 seconds (process running for 6.904)
+2025-03-07 22:31:04.394 [http-nio-8080-exec-2] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 70
+2025-03-07 22:31:04.585 [http-nio-8080-exec-2] INFO  c.S.q.controller.QuizController - A triple bond is present in:
+2025-03-07 22:31:08.022 [http-nio-8080-exec-2] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 29, Response Tokens: 52, Total Tokens: 81
+2025-03-07 22:31:14.646 [http-nio-8080-exec-4] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 75
+2025-03-07 22:31:14.659 [http-nio-8080-exec-4] INFO  c.S.q.controller.QuizController - The simplest molecule formed by sharing of electrons is:
+2025-03-07 22:31:15.627 [http-nio-8080-exec-4] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 32, Response Tokens: 49, Total Tokens: 81
+2025-03-07 22:31:23.781 [http-nio-8080-exec-5] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 60
+2025-03-07 22:31:54.253 [http-nio-8080-exec-7] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 80
+2025-03-07 22:31:54.317 [http-nio-8080-exec-7] INFO  c.S.q.controller.QuizController - Alkanes contain:
+2025-03-07 22:31:55.324 [http-nio-8080-exec-7] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 27, Response Tokens: 54, Total Tokens: 81
+2025-03-07 22:31:59.856 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 90
+2025-03-07 22:31:59.906 [http-nio-8080-exec-6] INFO  c.S.q.controller.QuizController - Which functional group is present in carboxylic acids?
+2025-03-07 22:32:00.963 [http-nio-8080-exec-6] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 31, Response Tokens: 49, Total Tokens: 80
+2025-03-07 22:32:38.823 [restartedMain] INFO  c.S.q.QuizServiceApplication - Starting QuizServiceApplication using Java 23.0.1 with PID 15720 (D:\SpringBoot\quizService\target\classes started by arghya in D:\SpringBoot\quizService)
+2025-03-07 22:32:38.827 [restartedMain] INFO  c.S.q.QuizServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-07 22:32:44.768 [restartedMain] INFO  c.S.q.QuizServiceApplication - Started QuizServiceApplication in 6.388 seconds (process running for 7.13)
+2025-03-07 22:32:51.137 [http-nio-8080-exec-2] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 90
+2025-03-07 22:32:51.301 [http-nio-8080-exec-2] INFO  c.S.q.controller.QuizController - Which functional group is present in carboxylic acids?
+2025-03-07 22:32:53.352 [http-nio-8080-exec-2] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 37, Response Tokens: 83, Total Tokens: 120
+2025-03-07 22:32:58.465 [http-nio-8080-exec-3] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 90
+2025-03-07 22:32:58.476 [http-nio-8080-exec-3] INFO  c.S.q.controller.QuizController - Which functional group is present in carboxylic acids?
+2025-03-07 22:32:59.617 [http-nio-8080-exec-3] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 37, Response Tokens: 82, Total Tokens: 119
+2025-03-07 22:33:04.534 [http-nio-8080-exec-4] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 105
+2025-03-07 22:33:04.600 [http-nio-8080-exec-4] INFO  c.S.q.controller.QuizController - Which hydrocarbon reacts with bromine water without heating?
+2025-03-07 22:33:06.248 [http-nio-8080-exec-4] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 37, Response Tokens: 111, Total Tokens: 148
+2025-03-07 22:33:29.121 [http-nio-8080-exec-7] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 75
+2025-03-07 22:33:29.187 [http-nio-8080-exec-7] INFO  c.S.q.controller.QuizController - The simplest molecule formed by sharing of electrons is:
+2025-03-07 22:33:30.292 [http-nio-8080-exec-7] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 38, Response Tokens: 73, Total Tokens: 111
+2025-03-07 22:33:34.408 [http-nio-8080-exec-8] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 82
+2025-03-07 22:33:34.414 [http-nio-8080-exec-8] INFO  c.S.q.controller.QuizController - Which of the following is an unsaturated hydrocarbon?
+2025-03-07 22:33:35.544 [http-nio-8080-exec-8] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 37, Response Tokens: 81, Total Tokens: 118
+2025-03-07 22:33:38.283 [http-nio-8080-exec-9] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 105
+2025-03-07 22:33:38.291 [http-nio-8080-exec-9] INFO  c.S.q.controller.QuizController - Which hydrocarbon reacts with bromine water without heating?
+2025-03-07 22:33:39.402 [http-nio-8080-exec-9] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 37, Response Tokens: 89, Total Tokens: 126
+2025-03-07 22:33:44.158 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 89
+2025-03-07 22:33:44.168 [http-nio-8080-exec-6] INFO  c.S.q.controller.QuizController - The simplest alkyne is:
+2025-03-07 22:33:45.341 [http-nio-8080-exec-6] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 34, Response Tokens: 91, Total Tokens: 125
+2025-03-07 22:33:49.665 [http-nio-8080-exec-5] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 152
