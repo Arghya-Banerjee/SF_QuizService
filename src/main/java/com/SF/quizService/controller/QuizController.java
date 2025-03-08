@@ -26,10 +26,11 @@ public class QuizController {
 
     // To get questions for the quiz
     @GetMapping("/subtopic/{subtopicid}")
-    public ResponseEntity<List<GetQuestionsBySubtopicDto>> getQuestionsBySubtopic(@PathVariable int subtopicid){
+    public ResponseEntity<QuizDataDto> getQuestionsBySubtopic(@PathVariable int subtopicid){
         List<GetQuestionsBySubtopicDto> questions = quizService.getQuestionsBySubtopic(7, subtopicid);
-
-        return ResponseEntity.ok(questions);
+        String quizName = quizService.getSubtopicNameBySubtopicId(4, subtopicid);
+        QuizDataDto quizData = new QuizDataDto(questions, quizName);
+        return ResponseEntity.ok(quizData);
     }
 
     // To start a quiz session

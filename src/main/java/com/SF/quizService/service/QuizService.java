@@ -65,4 +65,9 @@ public class QuizService {
         logger.info("getQuestionByQuizId called with parameters: opMode = {}, quizId = {}", opMode, quizId);
         return quizRepository.getQuestionByQuizId(opMode, quizId);
     }
+
+    public String getSubtopicNameBySubtopicId(int opMode, int subtopicId){
+        logger.info("getSubtopicNameBySubtopicId called with parameters: opMode = {}, subtopicId = {}", opMode, subtopicId);
+        return quizRepository.getSubtopicNameBySubtopicId(opMode, subtopicId);
+    }
 }

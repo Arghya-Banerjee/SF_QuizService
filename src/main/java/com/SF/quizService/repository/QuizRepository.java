@@ -79,4 +79,10 @@ public interface QuizRepository extends JpaRepository<RootEntity, Long> {
             @Param("quizId") int quizId
     );
 
+    @Query(value = "EXEC usp_GetDetails @opMode = :opMode, @subtopicId = :subtopicId", nativeQuery = true)
+    String getSubtopicNameBySubtopicId(
+            @Param("opMode") int opMode,
+            @Param("subtopicId") int subtopicId
+    );
+
 }

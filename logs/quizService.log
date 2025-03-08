@@ -95,3 +95,21 @@
 2025-03-07 22:33:44.168 [http-nio-8080-exec-6] INFO  c.S.q.controller.QuizController - The simplest alkyne is:
 2025-03-07 22:33:45.341 [http-nio-8080-exec-6] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 34, Response Tokens: 91, Total Tokens: 125
 2025-03-07 22:33:49.665 [http-nio-8080-exec-5] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 152
+2025-03-07 22:36:39.241 [restartedMain] INFO  c.S.q.QuizServiceApplication - Starting QuizServiceApplication using Java 23.0.1 with PID 17624 (D:\SpringBoot\quizService\target\classes started by arghya in D:\SpringBoot\quizService)
+2025-03-07 22:36:39.245 [restartedMain] INFO  c.S.q.QuizServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-07 22:36:44.738 [restartedMain] INFO  c.S.q.QuizServiceApplication - Started QuizServiceApplication in 5.918 seconds (process running for 6.649)
+2025-03-07 22:36:48.362 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 152
+2025-03-07 22:36:56.903 [http-nio-8080-exec-3] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 130
+2025-03-07 22:36:56.917 [http-nio-8080-exec-3] INFO  c.S.q.controller.QuizController - Why does soap form lather in soft water but not in hard water?
+2025-03-07 22:36:59.886 [http-nio-8080-exec-3] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 43, Response Tokens: 92, Total Tokens: 135
+2025-03-08 20:00:44.951 [restartedMain] INFO  c.S.q.QuizServiceApplication - Starting QuizServiceApplication using Java 23.0.1 with PID 2128 (D:\SpringBoot\quizService\target\classes started by arghya in D:\SpringBoot\quizService)
+2025-03-08 20:00:44.953 [restartedMain] INFO  c.S.q.QuizServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-08 20:00:51.040 [restartedMain] INFO  c.S.q.QuizServiceApplication - Started QuizServiceApplication in 6.585 seconds (process running for 7.618)
+2025-03-08 20:01:22.819 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 72
+2025-03-08 20:01:22.944 [http-nio-8080-exec-1] INFO  c.S.q.controller.QuizController - Diamond and graphite are:
+2025-03-08 20:01:26.321 [http-nio-8080-exec-1] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 33, Response Tokens: 97, Total Tokens: 130
+2025-03-08 20:04:33.748 [http-nio-8080-exec-4] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 4
+2025-03-08 20:04:41.245 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 4
+2025-03-08 20:04:42.868 [http-nio-8080-exec-7] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 4
+2025-03-08 20:04:44.404 [http-nio-8080-exec-8] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 4
+2025-03-08 20:11:58.250 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 150
