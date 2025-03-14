@@ -5,7 +5,10 @@ import com.SF.quizService.repository.QuizRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
@@ -14,6 +17,8 @@ public class QuizService {
 
     @Autowired
     private QuizRepository quizRepository;
+    @Autowired
+    private DetailsService detailsService;
     private static final Logger logger = LoggerFactory.getLogger(QuizService.class);
 
     public List<GetQuestionsBySubtopicDto> getQuestionsBySubtopic(int opMode, int subtopicId){
@@ -66,8 +71,10 @@ public class QuizService {
         return quizRepository.getQuestionByQuizId(opMode, quizId);
     }
 
-    public String getSubtopicNameBySubtopicId(int opMode, int subtopicId){
-        logger.info("getSubtopicNameBySubtopicId called with parameters: opMode = {}, subtopicId = {}", opMode, subtopicId);
-        return quizRepository.getSubtopicNameBySubtopicId(opMode, subtopicId);
+    public QuizDataDto getQuestionsBySubtopic(int subtopicid){
+        List<GetQuestionsBySubtopicDto> questions = getQuestionsBySubtopic(7, subtopicid);
+        String quizName = detailsService.getSubtopicNameBySubtopicId(subtopicid);
+        return new QuizDataDto(questions, quizName);
     }
+
 }

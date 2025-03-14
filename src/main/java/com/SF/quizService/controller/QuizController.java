@@ -1,6 +1,7 @@
 package com.SF.quizService.controller;
 
 import com.SF.quizService.dto.*;
+import com.SF.quizService.service.DetailsService;
 import com.SF.quizService.service.QuizAIService;
 import com.SF.quizService.service.QuizService;
 import jakarta.servlet.http.HttpSession;
@@ -21,15 +22,15 @@ public class QuizController {
     private QuizService quizService;
     @Autowired
     private QuizAIService quizAIService;
+    @Autowired
+    private DetailsService detailsService;
 
     private static final Logger logger = LoggerFactory.getLogger(QuizController.class);
 
     // To get questions for the quiz
     @GetMapping("/subtopic/{subtopicid}")
     public ResponseEntity<QuizDataDto> getQuestionsBySubtopic(@PathVariable int subtopicid){
-        List<GetQuestionsBySubtopicDto> questions = quizService.getQuestionsBySubtopic(7, subtopicid);
-        String quizName = quizService.getSubtopicNameBySubtopicId(4, subtopicid);
-        QuizDataDto quizData = new QuizDataDto(questions, quizName);
+        QuizDataDto quizData = quizService.getQuestionsBySubtopic(subtopicid);
         return ResponseEntity.ok(quizData);
     }
 

@@ -113,3 +113,144 @@
 2025-03-08 20:04:42.868 [http-nio-8080-exec-7] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 4
 2025-03-08 20:04:44.404 [http-nio-8080-exec-8] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 4
 2025-03-08 20:11:58.250 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getQuestionByQuizId called with parameters: opMode = 9, quizId = 150
+2025-03-08 21:05:28.634 [restartedMain] INFO  c.S.q.QuizServiceApplication - Starting QuizServiceApplication using Java 23.0.1 with PID 7180 (D:\SpringBoot\quizService\target\classes started by arghya in D:\SpringBoot\quizService)
+2025-03-08 21:05:28.637 [restartedMain] INFO  c.S.q.QuizServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-08 21:05:34.455 [restartedMain] INFO  c.S.q.QuizServiceApplication - Started QuizServiceApplication in 6.249 seconds (process running for 7.196)
+2025-03-08 21:05:43.415 [http-nio-8080-exec-2] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 4
+2025-03-08 21:05:43.586 [http-nio-8080-exec-2] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 4
+2025-03-11 12:49:50.525 [restartedMain] INFO  c.S.q.QuizServiceApplication - Starting QuizServiceApplication using Java 23.0.1 with PID 15452 (D:\SpringBoot\quizService\target\classes started by arghya in D:\SpringBoot\quizService)
+2025-03-11 12:49:50.528 [restartedMain] INFO  c.S.q.QuizServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-11 12:49:58.297 [restartedMain] INFO  c.S.q.QuizServiceApplication - Started QuizServiceApplication in 8.389 seconds (process running for 9.65)
+2025-03-11 12:50:13.150 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 12:50:13.464 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 12:50:16.225 [http-nio-8080-exec-2] INFO  c.SF.quizService.service.QuizService - startQuizSession called with parameters: opMode = 1, studentId = 1
+2025-03-11 12:50:44.983 [http-nio-8080-exec-3] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 12:50:45.052 [http-nio-8080-exec-3] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 12:50:46.446 [http-nio-8080-exec-4] INFO  c.SF.quizService.service.QuizService - startQuizSession called with parameters: opMode = 1, studentId = 1
+2025-03-11 21:12:52.845 [restartedMain] INFO  c.S.q.QuizServiceApplication - Starting QuizServiceApplication using Java 23.0.1 with PID 10976 (D:\SpringBoot\quizService\target\classes started by arghya in D:\SpringBoot\quizService)
+2025-03-11 21:12:52.862 [restartedMain] INFO  c.S.q.QuizServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-11 21:13:01.035 [restartedMain] INFO  c.S.q.QuizServiceApplication - Started QuizServiceApplication in 8.752 seconds (process running for 9.851)
+2025-03-11 21:13:06.226 [http-nio-8080-exec-2] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:13:06.363 [http-nio-8080-exec-2] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:13:08.097 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - startQuizSession called with parameters: opMode = 1, studentId = 1
+2025-03-11 21:16:03.777 [http-nio-8080-exec-5] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:16:03.844 [http-nio-8080-exec-5] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:16:17.779 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:16:17.804 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:16:22.428 [http-nio-8080-exec-7] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:16:22.439 [http-nio-8080-exec-7] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:16:23.280 [http-nio-8080-exec-3] INFO  c.SF.quizService.service.QuizService - startQuizSession called with parameters: opMode = 1, studentId = 1
+2025-03-11 21:16:46.766 [http-nio-8080-exec-10] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:16:46.821 [http-nio-8080-exec-10] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:17:53.642 [http-nio-8080-exec-8] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:17:53.695 [http-nio-8080-exec-8] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:17:54.447 [http-nio-8080-exec-5] INFO  c.SF.quizService.service.QuizService - startQuizSession called with parameters: opMode = 1, studentId = 1
+2025-03-11 21:18:41.780 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:18:41.829 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:18:42.994 [http-nio-8080-exec-7] INFO  c.SF.quizService.service.QuizService - startQuizSession called with parameters: opMode = 1, studentId = 1
+2025-03-11 21:21:35.257 [http-nio-8080-exec-10] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:21:35.329 [http-nio-8080-exec-10] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:21:36.820 [http-nio-8080-exec-2] INFO  c.SF.quizService.service.QuizService - startQuizSession called with parameters: opMode = 1, studentId = 1
+2025-03-11 21:22:25.788 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:22:25.837 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:22:31.575 [http-nio-8080-exec-4] INFO  c.SF.quizService.service.QuizService - startQuizSession called with parameters: opMode = 1, studentId = 1
+2025-03-11 21:23:11.590 [http-nio-8080-exec-5] INFO  c.SF.quizService.service.QuizService - viewQuizReport called with parameters: opMode = 4, sessionId = 18
+2025-03-11 21:23:11.603 [http-nio-8080-exec-5] INFO  c.SF.quizService.service.QuizService - getQuizAnalysis called with parameters: opMode = 5, sessionId = 18
+2025-03-11 21:23:14.687 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - viewQuizReport called with parameters: opMode = 4, sessionId = 9
+2025-03-11 21:23:14.693 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - getQuizAnalysis called with parameters: opMode = 5, sessionId = 9
+2025-03-11 21:23:22.233 [http-nio-8080-exec-7] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 4
+2025-03-11 21:23:22.283 [http-nio-8080-exec-7] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 4
+2025-03-11 21:24:56.262 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:24:56.318 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:28:30.072 [http-nio-8080-exec-5] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:28:30.148 [http-nio-8080-exec-5] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:28:44.868 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:28:44.879 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:28:45.844 [http-nio-8080-exec-7] INFO  c.SF.quizService.service.QuizService - startQuizSession called with parameters: opMode = 1, studentId = 1
+2025-03-11 21:29:15.954 [http-nio-8080-exec-10] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:29:16.003 [http-nio-8080-exec-10] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:31:12.414 [http-nio-8080-exec-4] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:31:12.436 [http-nio-8080-exec-4] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:31:13.658 [http-nio-8080-exec-5] INFO  c.SF.quizService.service.QuizService - startQuizSession called with parameters: opMode = 1, studentId = 1
+2025-03-11 21:40:17.013 [http-nio-8080-exec-9] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:40:17.034 [http-nio-8080-exec-9] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:40:21.732 [http-nio-8080-exec-3] INFO  c.SF.quizService.service.QuizService - startQuizSession called with parameters: opMode = 1, studentId = 1
+2025-03-11 21:41:56.791 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:41:56.808 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:41:59.233 [http-nio-8080-exec-8] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:41:59.247 [http-nio-8080-exec-8] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:42:03.958 [http-nio-8080-exec-4] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:42:03.963 [http-nio-8080-exec-4] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:44:50.777 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:44:50.797 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:44:51.777 [http-nio-8080-exec-7] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:44:51.780 [http-nio-8080-exec-7] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:44:54.395 [http-nio-8080-exec-9] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:44:54.401 [http-nio-8080-exec-9] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:44:55.908 [http-nio-8080-exec-3] INFO  c.SF.quizService.service.QuizService - startQuizSession called with parameters: opMode = 1, studentId = 1
+2025-03-11 21:47:59.535 [http-nio-8080-exec-8] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 46, quizAnswerDto = QuizAnswerDto{quizId=62, studentAnswer=2}
+2025-03-11 21:48:00.889 [http-nio-8080-exec-4] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 46, quizAnswerDto = QuizAnswerDto{quizId=68, studentAnswer=4}
+2025-03-11 21:48:01.490 [http-nio-8080-exec-5] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 46, quizAnswerDto = QuizAnswerDto{quizId=67, studentAnswer=4}
+2025-03-11 21:48:02.091 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 46, quizAnswerDto = QuizAnswerDto{quizId=71, studentAnswer=4}
+2025-03-11 21:48:02.658 [http-nio-8080-exec-7] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 46, quizAnswerDto = QuizAnswerDto{quizId=66, studentAnswer=4}
+2025-03-11 21:48:03.793 [http-nio-8080-exec-9] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 46, quizAnswerDto = QuizAnswerDto{quizId=65, studentAnswer=4}
+2025-03-11 21:48:04.370 [http-nio-8080-exec-3] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 46, quizAnswerDto = QuizAnswerDto{quizId=73, studentAnswer=4}
+2025-03-11 21:48:04.965 [http-nio-8080-exec-2] INFO  c.SF.quizService.service.QuizService - endQuizSession called with parameters: opMode = 2, sessionId = 46
+2025-03-11 21:48:05.794 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - viewQuizReport called with parameters: opMode = 4, sessionId = 46
+2025-03-11 21:48:05.798 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getQuizAnalysis called with parameters: opMode = 5, sessionId = 46
+2025-03-11 21:48:08.726 [http-nio-8080-exec-1] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 422, Response Tokens: 57, Total Tokens: 479
+2025-03-11 21:48:08.726 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - insertQuizAnalysis called with parameters: opMode = 6, sessionId = 46 and analysis
+2025-03-11 21:48:10.445 [http-nio-8080-exec-8] INFO  c.SF.quizService.service.QuizService - viewQuizReport called with parameters: opMode = 4, sessionId = 46
+2025-03-11 21:48:10.447 [http-nio-8080-exec-8] INFO  c.SF.quizService.service.QuizService - getQuizAnalysis called with parameters: opMode = 5, sessionId = 46
+2025-03-11 21:51:58.573 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:51:58.600 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:52:30.775 [http-nio-8080-exec-7] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-11 21:52:30.784 [http-nio-8080-exec-7] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-11 21:52:33.180 [http-nio-8080-exec-9] INFO  c.SF.quizService.service.QuizService - startQuizSession called with parameters: opMode = 1, studentId = 1
+2025-03-11 21:52:34.598 [http-nio-8080-exec-3] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 47, quizAnswerDto = QuizAnswerDto{quizId=62, studentAnswer=4}
+2025-03-11 21:52:35.128 [http-nio-8080-exec-10] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 47, quizAnswerDto = QuizAnswerDto{quizId=70, studentAnswer=4}
+2025-03-11 21:52:35.687 [http-nio-8080-exec-2] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 47, quizAnswerDto = QuizAnswerDto{quizId=71, studentAnswer=4}
+2025-03-11 21:52:36.200 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 47, quizAnswerDto = QuizAnswerDto{quizId=73, studentAnswer=4}
+2025-03-11 21:52:36.772 [http-nio-8080-exec-8] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 47, quizAnswerDto = QuizAnswerDto{quizId=74, studentAnswer=4}
+2025-03-11 21:52:37.332 [http-nio-8080-exec-4] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 47, quizAnswerDto = QuizAnswerDto{quizId=67, studentAnswer=4}
+2025-03-11 21:52:37.900 [http-nio-8080-exec-5] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 47, quizAnswerDto = QuizAnswerDto{quizId=69, studentAnswer=4}
+2025-03-11 21:52:38.585 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - endQuizSession called with parameters: opMode = 2, sessionId = 47
+2025-03-11 21:52:39.545 [http-nio-8080-exec-7] INFO  c.SF.quizService.service.QuizService - viewQuizReport called with parameters: opMode = 4, sessionId = 47
+2025-03-11 21:52:39.549 [http-nio-8080-exec-7] INFO  c.SF.quizService.service.QuizService - getQuizAnalysis called with parameters: opMode = 5, sessionId = 47
+2025-03-11 21:52:42.148 [http-nio-8080-exec-7] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 422, Response Tokens: 61, Total Tokens: 483
+2025-03-11 21:52:42.148 [http-nio-8080-exec-7] INFO  c.SF.quizService.service.QuizService - insertQuizAnalysis called with parameters: opMode = 6, sessionId = 47 and analysis
+2025-03-11 21:52:55.541 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - viewQuizReport called with parameters: opMode = 4, sessionId = 47
+2025-03-11 21:52:55.545 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getQuizAnalysis called with parameters: opMode = 5, sessionId = 47
+2025-03-13 14:59:55.122 [restartedMain] INFO  c.S.q.QuizServiceApplication - Starting QuizServiceApplication using Java 23.0.1 with PID 15080 (D:\SpringBoot\quizService\target\classes started by arghya in D:\SpringBoot\quizService)
+2025-03-13 14:59:55.122 [restartedMain] INFO  c.S.q.QuizServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-13 15:00:00.999 [restartedMain] INFO  c.S.q.QuizServiceApplication - Started QuizServiceApplication in 6.323 seconds (process running for 7.213)
+2025-03-13 15:01:07.729 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-13 15:01:08.121 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-13 15:01:09.068 [http-nio-8080-exec-2] INFO  c.SF.quizService.service.QuizService - startQuizSession called with parameters: opMode = 1, studentId = 1
+2025-03-13 15:02:02.763 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-13 15:02:02.777 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-13 15:02:18.791 [http-nio-8080-exec-5] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-13 15:02:18.816 [http-nio-8080-exec-5] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-13 15:02:21.522 [http-nio-8080-exec-3] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-13 15:02:21.530 [http-nio-8080-exec-3] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-13 15:02:58.790 [http-nio-8080-exec-4] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-13 15:02:58.809 [http-nio-8080-exec-4] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-13 15:02:59.788 [http-nio-8080-exec-8] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-13 15:02:59.802 [http-nio-8080-exec-8] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-13 15:03:03.864 [http-nio-8080-exec-9] INFO  c.SF.quizService.service.QuizService - getQuestionsBySubtopic called with parameters: opMode = 7, subtopicId = 1
+2025-03-13 15:03:03.876 [http-nio-8080-exec-9] INFO  c.SF.quizService.service.QuizService - getSubtopicNameBySubtopicId called with parameters: opMode = 4, subtopicId = 1
+2025-03-13 15:03:05.677 [http-nio-8080-exec-10] INFO  c.SF.quizService.service.QuizService - startQuizSession called with parameters: opMode = 1, studentId = 1
+2025-03-13 15:03:08.830 [http-nio-8080-exec-2] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 49, quizAnswerDto = QuizAnswerDto{quizId=69, studentAnswer=4}
+2025-03-13 15:03:10.920 [http-nio-8080-exec-6] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 49, quizAnswerDto = QuizAnswerDto{quizId=71, studentAnswer=4}
+2025-03-13 15:03:12.891 [http-nio-8080-exec-7] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 49, quizAnswerDto = QuizAnswerDto{quizId=66, studentAnswer=4}
+2025-03-13 15:03:14.951 [http-nio-8080-exec-5] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 49, quizAnswerDto = QuizAnswerDto{quizId=68, studentAnswer=4}
+2025-03-13 15:03:16.846 [http-nio-8080-exec-3] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 49, quizAnswerDto = QuizAnswerDto{quizId=75, studentAnswer=4}
+2025-03-13 15:03:18.571 [http-nio-8080-exec-4] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 49, quizAnswerDto = QuizAnswerDto{quizId=67, studentAnswer=4}
+2025-03-13 15:03:20.620 [http-nio-8080-exec-8] INFO  c.SF.quizService.service.QuizService - submitQuizAnswer called with parameters: opMode = 3, sessionId = 49, quizAnswerDto = QuizAnswerDto{quizId=74, studentAnswer=4}
+2025-03-13 15:03:22.694 [http-nio-8080-exec-10] INFO  c.SF.quizService.service.QuizService - endQuizSession called with parameters: opMode = 2, sessionId = 49
+2025-03-13 15:03:24.065 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - viewQuizReport called with parameters: opMode = 4, sessionId = 49
+2025-03-13 15:03:24.085 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - getQuizAnalysis called with parameters: opMode = 5, sessionId = 49
+2025-03-13 15:03:28.568 [http-nio-8080-exec-1] INFO  c.S.q.service.QuizAIService - Quiz Report Analysis generated with cost: Prompt Tokens: 416, Response Tokens: 73, Total Tokens: 489
+2025-03-13 15:03:28.568 [http-nio-8080-exec-1] INFO  c.SF.quizService.service.QuizService - insertQuizAnalysis called with parameters: opMode = 6, sessionId = 49 and analysis
+2025-03-13 15:03:31.088 [http-nio-8080-exec-2] INFO  c.SF.quizService.service.QuizService - viewQuizReport called with parameters: opMode = 4, sessionId = 49
+2025-03-13 15:03:31.097 [http-nio-8080-exec-2] INFO  c.SF.quizService.service.QuizService - getQuizAnalysis called with parameters: opMode = 5, sessionId = 49
